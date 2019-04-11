@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабараторна 3</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="text-center" style="margin-top: 5%">
+        <button type="button" class="btn btn-success MsoNormal" style="height: 80px; width: 200px; margin-right: 30px; font-size: 24px;">Приховати</button>
+        <button type="button" class="btn btn-danger" style="height: 80px; width: 200px; font-size: 24px;">Показати</button>
+    </div>
+    <div class="MsoNormal" style="text-align: center;">
+        <img class="MsoNormal" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Ski_trail_rating_symbol-green_circle.svg/1024px-Ski_trail_rating_symbol-green_circle.svg.png" 
+        alt="Nose" style="height: 100px; width: 100px; margin-top: 2%;">
+    </br>
+        <input class="MsoNormal" id="tooltip-1" style="height: 40px; width: 400px; margin-top: 2%; text-align: center; font-size: 22px;" disabled placeholder="Все буде добре" type="text" size="40">
+    </div>
+    <script type="text/javascript">
+        $("button.btn-success").click(function(){
+            $(".MsoNormal:even").hide();
+        });
+        $("button.btn-danger").click(function(){
+            $(".MsoNormal:even").show();
+        });
+    </script>
+</body>
+</html>
